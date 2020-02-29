@@ -1,0 +1,43 @@
+﻿@using Hackathon.Feature.Navigation
+@using Sitecore.Data.Items
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Data.Fields
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+
+@{
+    var datasource = RenderingContext.Current.Rendering.Item;
+
+    if (!datasource.IsDerived(Templates.NavigationFolder.ID))
+    {
+        return;
+    }
+}
+<nav class="collapse navbar-collapse clearfix" role="navigation">
+    <ul class="nav navbar-nav navbar-right">
+        @foreach (Item item in datasource.Children)
+        {
+            <li class="dropdown active">
+                @*<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>*@
+                @Html.Sitecore().Field(Templates.NavigationLink.Fields.Link, item, new
+                {
+                    @class = "dropdown-toggle",
+                    data_toggle = "dropdown"
+               ,
+                    text = ((Sitecore.Data.Fields.LinkField)item.Fields[Templates.NavigationLink.Fields.Link]).Text + "<i class=\"fa fa-angle-down\"></i>"
+                })
+                <div class="dropdown-menu">
+                    <ul>
+                        @if (datasource.IsDerived(Templates.NavigationFolder.ID) && item.Children.Count > 0)
+                        {
+                            foreach (Item subItem in item.Children)
+                            {
+                                <li class="active">@Html.Sitecore().Field(Templates.NavigationLink.Fields.Link, subItem)</li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </li>
+        }
+    </ul>
+</nav>

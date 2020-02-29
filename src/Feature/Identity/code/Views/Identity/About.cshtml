@@ -1,0 +1,27 @@
+﻿@using Hackathon.Feature.Identity
+@using Hackathon.Feature.Identity.Repositories
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+    var identity = IdentityRepository.Get(Model.Item);
+    if (identity == null)
+    {
+        return;
+    }
+}
+<h3 class="widget-title">About Craft</h3>
+<p>@Html.Sitecore().Field(Templates.Identity.Fields.About, identity)</p>
+<h4>Address</h4>
+<p>@Html.Sitecore().Field(Templates.Identity.Fields.Address, identity)</p>
+<div class="row">
+    <div class="col-md-6">
+        <h4>Email:</h4>
+        <p>@Html.Sitecore().Field(Templates.Identity.Fields.Email, identity)</p>
+    </div>
+    <div class="col-md-6">
+        <h4>Phone No.</h4>
+        <p>@Html.Sitecore().Field(Templates.Identity.Fields.Phone, identity)</p>
+    </div>
+</div>

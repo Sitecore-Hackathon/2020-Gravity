@@ -1,0 +1,28 @@
+﻿---
+ID: "158957bb-1468-4e53-94ed-9fac8f7786c2"
+Parent: "55739bd6-09ea-44e1-9ded-17bbc088707e"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Hackathon/Content Types/Navigable Folder
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/folder_network.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {DACAF3C7-3F30-4178-8642-6F977CCE0EBD}
+    {F23427ED-C4DE-44F1-B214-B52E2C842E64}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{5D70FB37-BEA7-4837-A30F-BE58C6FA4439}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T143807Z

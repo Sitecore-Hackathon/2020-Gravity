@@ -1,0 +1,23 @@
+﻿@using Hackathon.Feature.Navigation
+@using Sitecore.Data.Items
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+
+@{
+    var datasource = RenderingContext.Current.Rendering.Item;
+
+    if (!datasource.IsDerived(Templates.NavigationFolder.ID))
+    {
+        <text>@datasource.ID</text>
+        return;
+    }
+}
+<ul class="footer-social unstyled">
+    <li>
+        @foreach (Item item in datasource.Children)
+        {
+            @Html.Sitecore().Field(Templates.NavigationLink.Fields.Link, item, new { text = "<span class=\"icon-pentagon wow bounceIn\"><i class=\"fa " + item[Templates.NavigationCssClass.Fields.CssClass] + "\"></i></span>" })
+        }
+        </li>
+</ul>
