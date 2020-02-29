@@ -63,11 +63,11 @@ namespace Hackathon.Feature.Teams.FormAction
                 }
 
                 TeamMember _member2 = new TeamMember();
-                _member2.FullName = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 Full Name"));
-                _member2.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 Email Address"));
-                _member2.LinkedInUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 LinkedIn Url"));
-                _member2.TwitterUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 Twitter Url"));
-                _member2.Country = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 Country"));
+                _member2.FullName = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 2 Full Name"));
+                _member2.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 2 Email Address"));
+                _member2.LinkedInUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 2 LinkedIn Url"));
+                _member2.TwitterUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 2 Twitter Url"));
+                _member2.Country = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 2 Country"));
 
                 if (TeamRepository.ValidateTeamMembers(_member2))
                 {
@@ -75,11 +75,11 @@ namespace Hackathon.Feature.Teams.FormAction
                 }
 
                 TeamMember _member3 = new TeamMember();
-                _member3.FullName = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 Full Name"));
-                _member3.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 Email Address"));
-                _member3.LinkedInUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 LinkedIn Url"));
-                _member3.TwitterUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 Twitter Url"));
-                _member3.Country = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 Country"));
+                _member3.FullName = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 3 Full Name"));
+                _member3.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 3 Email Address"));
+                _member3.LinkedInUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 3 LinkedIn Url"));
+                _member3.TwitterUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 3 Twitter Url"));
+                _member3.Country = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team member 3 Country"));
 
                 if (TeamRepository.ValidateTeamMembers(_member3))
                 {

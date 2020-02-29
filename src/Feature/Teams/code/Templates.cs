@@ -54,7 +54,7 @@ namespace Hackathon.Feature.Teams
 
         public struct TeamsListing
         {
-            public static readonly ID ID = new ID("{69210007-89F6-445C-8857-E573C6B5B035}");
+            public static readonly ID ID = new ID("{3875FF27-04B9-4476-ABD4-BB4D777663F6}");
 
         }
     }
