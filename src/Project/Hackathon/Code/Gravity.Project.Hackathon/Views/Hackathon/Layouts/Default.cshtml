@@ -1,6 +1,6 @@
-﻿@using Sitecore.Foundation.Assets
+﻿@*@using Sitecore.Foundation.Assets
 @using Sitecore.Foundation.Assets.Models
-@using Sitecore.Foundation.Assets.Services
+@using Sitecore.Foundation.Assets.Services*@
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
-    @RenderAssetsService.Current.RenderStyles()
+    @*@RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
+    @RenderAssetsService.Current.RenderStyles()*@
 </head>
 <body>
     <div class="body-inner">
         @Html.Sitecore().Placeholder("header")
         @Html.Sitecore().Placeholder("page-content")
         @Html.Sitecore().Placeholder("footer")
-        @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
+        @*@RenderAssetsService.Current.RenderScript(ScriptLocation.Body)*@
     </div>
 </body>
 </html>
