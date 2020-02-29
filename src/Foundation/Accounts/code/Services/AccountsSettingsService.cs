@@ -13,7 +13,7 @@
 
     public class AccountsSettingsService : IAccountsSettingsService
     {
-        public static readonly string PageNotFoundUrl = Settings.GetSetting("Sitecore.Feature.Accounts.PageNotFoundUrl", "/404");
+        public static readonly string PageNotFoundUrl = Settings.GetSetting("Sitecore.Foundation.Accounts.PageNotFoundUrl", "/404");
         public static AccountsSettingsService Instance => new AccountsSettingsService();
 
         public virtual string GetPageLink(Item contextItem, ID fieldID)
@@ -47,47 +47,7 @@
             }
         }
 
-        public virtual Guid? GetRegistrationOutcome(Item contextItem)
-        {
-            var item = this.GetAccountsSettingsItem(contextItem);
-
-            if (item == null)
-            {
-                throw new ItemNotFoundException("Page with accounts settings isn't specified");
-            }
-
-            ReferenceField field = item.Fields[Templates.AccountsSettings.Fields.RegisterOutcome];
-            return field?.TargetID?.ToGuid();
-        }
-
-        public MailMessage GetForgotPasswordMailTemplate()
-        {
-            var settingsItem = this.GetAccountsSettingsItem(null);
-            InternalLinkField link = settingsItem.Fields[Templates.AccountsSettings.Fields.ForgotPasswordMailTemplate];
-            var mailTemplateItem = link.TargetItem;
-
-            if (mailTemplateItem == null)
-            {
-                throw new ItemNotFoundException($"Could not find mail template item with {link.TargetID} ID");
-            }
-
-            var fromMail = mailTemplateItem.Fields[Templates.MailTemplate.Fields.From];
-
-            if (string.IsNullOrEmpty(fromMail.Value))
-            {
-                throw new InvalidValueException("'From' field in mail template should be set");
-            }
-
-            var body = mailTemplateItem.Fields[Templates.MailTemplate.Fields.Body];
-            var subject = mailTemplateItem.Fields[Templates.MailTemplate.Fields.Subject];
-
-            return new MailMessage
-            {
-                From = new MailAddress(fromMail.Value),
-                Body = body.Value,
-                Subject = subject.Value
-            };
-        }
+     
 
         public virtual Item GetAccountsSettingsItem(Item contextItem)
         {

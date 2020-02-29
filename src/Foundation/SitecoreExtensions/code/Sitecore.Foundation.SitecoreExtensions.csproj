@@ -192,7 +192,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\Foundation\Foundation.SitecoreExtensions.Serialization.config" />
-    <None Include="App_Config\layers.config.xdt" />
     <None Include="web.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <None Include="web.Debug.config">

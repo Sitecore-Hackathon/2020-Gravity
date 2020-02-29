@@ -46,15 +46,7 @@
            
         }
 
-        public string RestorePassword(string userName)
-        {
-            var domainName = Context.Domain.GetFullName(userName);
-            var user = Membership.GetUser(domainName);
-            if (user == null)
-                throw new ArgumentException($"Could not reset password for user '{userName}'", nameof(userName));
-            return user.ResetPassword();
-        }
-
+      
         public void RegisterUser(string email, string password, string profileId)
         {
             Assert.ArgumentNotNullOrEmpty(email, nameof(email));

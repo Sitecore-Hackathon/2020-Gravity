@@ -6,17 +6,13 @@
     {
         public struct AccountsSettings
         {
-            public static readonly ID ID = new ID("{59D216D1-035C-4497-97B4-E3C5E9F1C06B}");
+            public static readonly ID ID = new ID("{24D14C1A-7975-47F5-885D-13FCA3930FA1}");
 
             public struct Fields
             {
-                public static readonly ID AccountsDetailsPage = new ID("{ED71D374-8C33-4561-991D-77482AE01330}");
-                public static readonly ID RegisterPage = new ID("{71962360-10D8-4B98-BB8D-57660CE11127}");
-                public static readonly ID LoginPage = new ID("{60745023-FFD5-400E-8F80-4BCA9F2ABB29}");
-                public static readonly ID ForgotPasswordPage = new ID("{F3CD2BB8-472B-4DF0-87C0-A13098E391CA}");
-                public static readonly ID AfterLoginPage = new ID("{B128E2B3-3865-4F1C-A147-5F248676D3F5}");
-                public static readonly ID ForgotPasswordMailTemplate = new ID("{365254C4-1C1C-493A-9710-671574717898}");
-                public static readonly ID RegisterOutcome = new ID("{835FA523-D28A-46A2-A589-6AA4A5BF0846}");
+                public static readonly ID RegisterPage = new ID("{461907A7-35E8-4CC4-BCBE-D18C223660A5}");
+                public static readonly ID LoginPage = new ID("{8CF7D298-ED12-47A9-B968-8D2CAF8FCCD4}");
+               public static readonly ID AfterLoginPage = new ID("{D9EDE02C-A980-4C88-A13F-AF7DFFCB2DDA}");
             }
         }
 

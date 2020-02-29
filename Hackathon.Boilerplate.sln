@@ -1,7 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29509.3
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{17DD5718-6E13-4F2C-9738-B410396D4552}"
@@ -49,6 +48,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accounts", "Accounts", "{D676F6C2-603B-460E-B4FB-8A5DFD080540}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Accounts", "src\Foundation\Accounts\code\Sitecore.Foundation.Accounts.csproj", "{3F61C57D-50D9-4194-8196-EF5F7AA4CCE5}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hackathon", "Hackathon", "{EF5BDE82-78D9-4E01-B00F-33628510BB4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gravity.Project.Hackathon", "src\Project\Hackathon\Code\Gravity.Project.Hackathon\Gravity.Project.Hackathon.csproj", "{90816431-26B5-4F79-8E49-0651990F1879}"
@@ -68,6 +68,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teams", "Teams", "{311F9988-3241-4DE8-A7CB-F2CB52E962EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.Teams", "src\Feature\Teams\code\Hackathon.Feature.Teams.csproj", "{64D11244-17FD-4EE2-B46A-7AC9AF617249}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dictionary", "Dictionary", "{74FB446A-0AB2-4784-B246-DE6201B9074D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Dictionary", "src\Foundation\Dictionary\code\Sitecore.Foundation.Dictionary.csproj", "{0D6BA4D8-C469-4AE9-9EBB-93BDF7D7E78F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,10 @@ Global
 		{64D11244-17FD-4EE2-B46A-7AC9AF617249}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64D11244-17FD-4EE2-B46A-7AC9AF617249}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64D11244-17FD-4EE2-B46A-7AC9AF617249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D6BA4D8-C469-4AE9-9EBB-93BDF7D7E78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D6BA4D8-C469-4AE9-9EBB-93BDF7D7E78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D6BA4D8-C469-4AE9-9EBB-93BDF7D7E78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D6BA4D8-C469-4AE9-9EBB-93BDF7D7E78F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,9 +143,11 @@ Global
 		{8BED52CC-1F45-4D7A-8C63-C5D630EFE3CF} = {42E35A15-B7C2-4B11-AAB6-B20A10AE8480}
 		{311F9988-3241-4DE8-A7CB-F2CB52E962EF} = {17DD5718-6E13-4F2C-9738-B410396D4552}
 		{64D11244-17FD-4EE2-B46A-7AC9AF617249} = {311F9988-3241-4DE8-A7CB-F2CB52E962EF}
+		{74FB446A-0AB2-4784-B246-DE6201B9074D} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{0D6BA4D8-C469-4AE9-9EBB-93BDF7D7E78F} = {74FB446A-0AB2-4784-B246-DE6201B9074D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
 	EndGlobalSection
 EndGlobal
