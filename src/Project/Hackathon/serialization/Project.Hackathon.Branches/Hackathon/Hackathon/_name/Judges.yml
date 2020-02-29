@@ -1,0 +1,17 @@
+﻿---
+ID: "ba20d5c3-565d-424f-a7e5-df7e0599cfc7"
+Parent: "12036347-abe1-4381-92e1-033532b4e234"
+Template: "0ecfea09-7ae1-4627-951d-9ca5f8237a01"
+Path: /sitecore/templates/Branches/Project/Hackathon/Hackathon/$name/Judges
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T123259Z
+    - ID: "f6b51342-3c44-4072-9a69-e740048e6566"
+      Hint: Name
+      Value: Jude Item

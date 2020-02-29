@@ -9,9 +9,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "158fc578-b759-4052-bc1b-668560f4a6c8"
-      Hint: Full Name
-      Value: $name
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20200229T122617Z
