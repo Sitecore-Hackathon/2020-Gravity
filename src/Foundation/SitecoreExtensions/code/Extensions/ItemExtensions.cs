@@ -154,6 +154,32 @@
             return item?.Visualization?.Layout != null;
         }
 
+        public static bool IsDerived(this Item item, ID templateId)
+        {
+            if (item == null)
+            {
+                return false;
+            }
+
+            return !templateId.IsNull && item.IsDerived(item.Database.Templates[templateId]);
+        }
+
+        private static bool IsDerived(this Item item, Item templateItem)
+        {
+            if (item == null)
+            {
+                return false;
+            }
+
+            if (templateItem == null)
+            {
+                return false;
+            }
+
+            var itemTemplate = TemplateManager.GetTemplate(item);
+            return itemTemplate != null && (itemTemplate.ID == templateItem.ID || itemTemplate.DescendsFrom(templateItem.ID));
+        }
+
         public static bool FieldHasValue(this Item item, ID fieldID)
         {
             return item.Fields[fieldID] != null && !string.IsNullOrWhiteSpace(item.Fields[fieldID].Value);
