@@ -1,22 +1,19 @@
 ﻿---
-ID: "2c8833b9-b078-41fc-9bbb-3c43419fa033"
-Parent: "55739bd6-09ea-44e1-9ded-17bbc088707e"
+ID: "fa70f0bf-03ca-4aeb-ae92-3ab5411bfa8d"
+Parent: "a22da59a-38ee-4c2d-9e5b-47b85e7e327b"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Hackathon/Content Types/Site Root
+Path: /sitecore/templates/Project/Hackathon/Folders/Slider Folder
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: /~/icon/office/32x32/earth2.png
+  Value: /~/icon/apps/32x32/Slideshow.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
   Value: |
     {1930BBEB-7805-471A-A3BE-4858AC7CF696}
-    {124AED8A-D1B7-488C-8950-1C19AB85428D}
-- ID: "f7d48a55-2158-4f02-9356-756654404f73"
-  Hint: __Standard values
-  Value: "{93C060BD-4561-4831-92B7-83F8C1BE4D4E}"
+    {B2CFC44B-65ED-4E37-9104-2CDE925D300C}
 Languages:
 - Language: en
   Versions:
@@ -24,4 +21,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T064416Z
+      Value: 20200229T122108Z

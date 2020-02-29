@@ -1,0 +1,14 @@
+﻿---
+ID: "de215b48-9163-4e1b-a811-0a835ecf89b7"
+Parent: "8160cbf6-c465-43a5-b1a6-02fa26823632"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Teasers/_Image Slider Item/Slide Information
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T102529Z

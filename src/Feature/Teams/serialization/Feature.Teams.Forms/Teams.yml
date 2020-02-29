@@ -1,0 +1,14 @@
+﻿---
+ID: "0f4672c5-4009-44a4-bb75-78f6682dbfd7"
+Parent: "4e29eca2-4969-4df8-8ae5-cbe4e1f46b8e"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/Forms/Feature/Teams
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T060001Z
