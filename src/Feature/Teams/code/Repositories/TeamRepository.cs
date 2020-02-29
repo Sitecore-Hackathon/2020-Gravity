@@ -91,8 +91,8 @@ namespace Hackathon.Feature.Teams.Repositories
             {
                 Sitecore.Data.Database masterDB = Sitecore.Configuration.Factory.GetDatabase(DBNames.Master);
 
-                Item _rootItem = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.StartPath + "/" + Sitecore.Context.Site.StartItem);
-                Item parentItem = _rootItem.Children.ToList().Where(p => p.IsDerived(Templates.TeamsListing.ID)).FirstOrDefault();
+                Item _rootItem = Sitecore.Context.Database.GetItem(Sitecore.Context.Site.StartPath);
+                Item parentItem = _rootItem.Axes.GetDescendants().ToList().Where(p => p.IsDerived(Templates.TeamsListing.ID)).FirstOrDefault();
 
                 string name = ItemUtil.ProposeValidItemName(Team.TeamName);
                 var teamTemplate = masterDB.GetTemplate(Templates.Team.ID);
