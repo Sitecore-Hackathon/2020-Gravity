@@ -278,7 +278,7 @@
     <Content Include="favicon.ico" />
     <Content Include="App_Config\Include\Project\Hackathon.Website.config" />
     <Content Include="App_Config\Include\Project\Hackathon.Dev.config" />
-    <Content Include="Views\Web.config" />
+    <None Include="Views\Web.config" />
     <Content Include="Views\Hackathon\Layouts\Default.cshtml" />
   </ItemGroup>
   <ItemGroup />
