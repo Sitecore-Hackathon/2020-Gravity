@@ -23,30 +23,23 @@
                     <!-- Team start -->
                     <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
                         <div class="plan text-center">
-                            <span class="plan-name"> </span>
+
                             <p class="plan-price"><strong>@Html.Sitecore().Field(Templates.Team.Fields.Name, team.item)</strong></p>
                             <ul class="list-unstyled">
                                 @foreach (var member in team.Members)
                                 {
                                     <li>
-                                        @Html.Sitecore().Field(Templates.TeamMember.Fields.FullName, member)
-                                    <div class="team-social">
+                                        @Html.Sitecore().Field(Templates.TeamMember.Fields.FullName, member.item)
+                                        <div class="team-social">
+                                            <a class="twt" href="@Html.Sitecore().Field(Templates.TeamMember.Fields.TwitterUrl, member.item)"><i class="fa fa-twitter"></i></a>
+                                            <a class="linkdin" href="@Html.Sitecore().Field(Templates.TeamMember.Fields.LinkedInUrl, member.item)"><i class="fa fa-linkedin"></i></a>
 
-                                        @Html.Sitecore().Field(Templates.TeamMember.Fields.TwitterUrl_FieldName, member.item,
-                                      new { text = "<i class='fa fa-twitter'></i>", @Class = "twt" }
-                                      )
+                                        </div>
+                                    </li>
 
-                                        @Html.Sitecore().Field(Templates.TeamMember.Fields.LinkedInUrl_FieldName, member.item,
-                                new { text = "<i class='fa fa-linkedin'></i>", @Class = "linkdin" }
-                                )
-
-
-                                    </div>
-                                </li>
-
-                            }
+                                }
                             </ul>
-                            <a class="btn btn-primary" href="#.">Sign Up</a>
+
                         </div>
                     </div><!-- Team end -->
                 }

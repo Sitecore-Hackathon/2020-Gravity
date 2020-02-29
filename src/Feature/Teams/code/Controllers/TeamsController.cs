@@ -30,7 +30,8 @@ namespace Hackathon.Feature.Teams.Controllers
                     foreach (var teamItem in datasource.Children.Where(x => x.IsDerived(Templates.Team.ID)))
                     {
                         var team = new Team();
-
+                        team.Members = new List<TeamMember>();
+                        team.item = teamItem;
                         foreach (var member in teamItem.Children.Where(x => x.IsDerived(Templates.TeamMember.ID)))
                         {
                             team.Members.Add(new TeamMember { item = member });
@@ -53,6 +54,8 @@ namespace Hackathon.Feature.Teams.Controllers
                             foreach (var teamItem in Childs.Where(x => x.IsDerived(Templates.Team.ID)))
                             {
                                 var team = new Team();
+                                team.item = teamItem;
+                                team.Members = new List<TeamMember>();
 
                                 foreach (var member in teamItem.Children.Where(x => x.IsDerived(Templates.TeamMember.ID)))
                                 {
@@ -72,6 +75,8 @@ namespace Hackathon.Feature.Teams.Controllers
                             foreach (var teamObj in teamItem.Children.Where(x => x.IsDerived(Templates.Team.ID)))
                             {
                                 var team = new Team();
+                                team.item = teamObj;
+                                team.Members = new List<TeamMember>();
 
                                 foreach (var member in teamObj.Children.Where(x => x.IsDerived(Templates.TeamMember.ID)))
                                 {
