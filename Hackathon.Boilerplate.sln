@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Seriali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Foundation.Vanilla", "src\Foundation\Vanilla\code\Sitecore.Foundation.Vanilla.csproj", "{8BED52CC-1F45-4D7A-8C63-C5D630EFE3CF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teams", "Teams", "{311F9988-3241-4DE8-A7CB-F2CB52E962EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.Teams", "src\Feature\Teams\code\Hackathon.Feature.Teams.csproj", "{64D11244-17FD-4EE2-B46A-7AC9AF617249}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,10 @@ Global
 		{8BED52CC-1F45-4D7A-8C63-C5D630EFE3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BED52CC-1F45-4D7A-8C63-C5D630EFE3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BED52CC-1F45-4D7A-8C63-C5D630EFE3CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D11244-17FD-4EE2-B46A-7AC9AF617249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D11244-17FD-4EE2-B46A-7AC9AF617249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D11244-17FD-4EE2-B46A-7AC9AF617249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D11244-17FD-4EE2-B46A-7AC9AF617249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +83,8 @@ Global
 		{366148B7-2392-4F42-80D6-786B7A3682AE} = {080FF96A-E57E-424F-802A-F6B4096978E5}
 		{007CD5DC-0030-460D-91A3-3DDEA9AB472F} = {9DC7492E-5DC2-4649-A242-8F65CCCC74C7}
 		{8BED52CC-1F45-4D7A-8C63-C5D630EFE3CF} = {42E35A15-B7C2-4B11-AAB6-B20A10AE8480}
+		{311F9988-3241-4DE8-A7CB-F2CB52E962EF} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{64D11244-17FD-4EE2-B46A-7AC9AF617249} = {311F9988-3241-4DE8-A7CB-F2CB52E962EF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
