@@ -1,20 +1,22 @@
 ﻿---
-ID: "2d69353d-8809-4ee5-ba19-128be84b30a8"
+ID: "8c8ea546-4e79-4bce-b810-4b52a5b2f054"
 Parent: "3d375c48-7998-448b-b32c-53b8a676c913"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Hackathon/Page Types/Ideas
+Path: /sitecore/templates/Project/Hackathon/Page Types/Generic Page
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: businessv2/32x32/thought.png
+  Value: /~/icon/office/32x32/text.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{4CA6873D-709E-4C4E-8643-D2BC44C4CEEE}"
+  Value: "{F61B8529-BE00-452A-A629-27B4466EE5DC}"
 Languages:
 - Language: en
   Versions:
@@ -22,4 +24,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T133428Z
+      Value: 20200229T172234Z
