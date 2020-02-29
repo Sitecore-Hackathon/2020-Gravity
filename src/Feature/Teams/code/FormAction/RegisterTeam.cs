@@ -11,13 +11,13 @@ using Sitecore.ExperienceForms.Processing.Actions;
 
 namespace Hackathon.Feature.Teams.FormAction
 {
-    public class RegisterForm : SubmitActionBase<string>
+    public class RegisterTeam : SubmitActionBase<string>
     {
         private ITeamRepository TeamRepository { get; }
 
         //Initializes a new instance of the EmailMe class.
         //submitActionData => The submit action data
-        public RegisterForm(ISubmitActionData submitActionData, ITeamRepository ITeamRepository) : base(submitActionData)
+        public RegisterTeam(ISubmitActionData submitActionData, ITeamRepository ITeamRepository) : base(submitActionData)
         {
             TeamRepository = ITeamRepository;
         }
@@ -32,6 +32,8 @@ namespace Hackathon.Feature.Teams.FormAction
             Team _team = new Team();
             _team.TeamName = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Name"));
             _team.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Email Address"));
+            _team.LoginName = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Login Name"));
+            _team.Password = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Password"));
 
             ID _teamId = null;
             if (TeamRepository.ValidateTeam(_team))
@@ -47,6 +49,7 @@ namespace Hackathon.Feature.Teams.FormAction
             _member1.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 1 Email Address"));
             _member1.LinkedInUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 1 LinkedIn Url"));
             _member1.TwitterUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 1 Twitter Url"));
+            _member1.Country = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 1 Country"));
 
             if (TeamRepository.ValidateTeamMembers(_member1))
             {
@@ -58,6 +61,7 @@ namespace Hackathon.Feature.Teams.FormAction
             _member2.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 Email Address"));
             _member2.LinkedInUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 LinkedIn Url"));
             _member2.TwitterUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 Twitter Url"));
+            _member2.Country = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 2 Country"));
 
             if (TeamRepository.ValidateTeamMembers(_member2))
             {
@@ -69,6 +73,7 @@ namespace Hackathon.Feature.Teams.FormAction
             _member3.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 Email Address"));
             _member3.LinkedInUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 LinkedIn Url"));
             _member3.TwitterUrl = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 Twitter Url"));
+            _member3.Country = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Member 3 Country"));
 
             if (TeamRepository.ValidateTeamMembers(_member3))
             {

@@ -20,6 +20,12 @@ namespace Hackathon.Feature.Teams
 
                 public static readonly ID EmailAddress = new ID("{297AD2AE-7957-4EBE-B120-FF5D2BA9B33D}");
                 public const string EmailAddress_FieldName = "Email Address";
+
+                public static readonly ID LoginName = new ID("{297AD2AE-7957-4EBE-B120-FF5D2BA9B33D}");
+                public const string LoginName_FieldName = "Login Name";
+
+                public static readonly ID Password = new ID("{297AD2AE-7957-4EBE-B120-FF5D2BA9B33D}");
+                public const string Password_FieldName = "Password";
             }
         }
 
@@ -40,6 +46,9 @@ namespace Hackathon.Feature.Teams
 
                 public static readonly ID TwitterUrl = new ID("{2D37ABE0-84D4-4161-AB24-85E6F6380CAB}");
                 public const string TwitterUrl_FieldName = "Twitter Url";
+
+                public static readonly ID Country = new ID("{492BF6C3-D2AE-44A0-8572-748534ABD5DC}");
+                public const string Country_FieldName = "Country";
             }
         }
     }

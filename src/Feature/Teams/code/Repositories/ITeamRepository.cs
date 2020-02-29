@@ -15,9 +15,7 @@ namespace Hackathon.Feature.Teams.Repositories
 
         void CreateTeamMemberSitecoreItem(ID TeamId, TeamMember TeamMember);
 
-        void RegisterTeam(string Email, string Password, string ProfileId);
-
-        void SendTeamRegistrationLink(string email);
+        void RegisterTeam(string Email, string Password);
 
         bool ValidateTeam(Team Team);
 

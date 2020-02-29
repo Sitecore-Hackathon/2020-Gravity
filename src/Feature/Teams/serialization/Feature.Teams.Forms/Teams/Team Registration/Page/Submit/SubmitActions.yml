@@ -1,0 +1,14 @@
+﻿---
+ID: "6c1ead4e-b866-4178-a9df-be75a62e363c"
+Parent: "2fb105d1-8ec8-4fb6-b2c5-26b301e1ff99"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/Forms/Feature/Teams/Team Registration/Page/Submit/SubmitActions
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T165005Z

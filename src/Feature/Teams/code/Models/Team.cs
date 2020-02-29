@@ -10,5 +10,9 @@ namespace Hackathon.Feature.Teams.Models
         public string TeamName { get; set; }
 
         public string EmailAddress { get; set; }
+
+        public string LoginName { get; set; }
+
+        public string Password { get; set; }
     }
 }
