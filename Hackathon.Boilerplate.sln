@@ -84,6 +84,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teasers", "Teasers", "{A5BB4070-5193-421A-9CFD-8FBEBA2BCE72}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.Teasers", "src\Feature\Teasers\code\Hackathon.Feature.Teasers.csproj", "{D8EEFE1A-A950-4CFA-9E47-F408F9475379}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{0F651E4E-C5A0-4193-BD2E-D483E14ACEA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.Identity", "src\Feature\Identity\code\Hackathon.Feature.Identity.csproj", "{12E7E8A3-D087-46DF-8922-4CDDF393162F}"
