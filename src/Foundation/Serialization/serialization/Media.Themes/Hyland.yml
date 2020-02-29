@@ -1,0 +1,14 @@
+﻿---
+ID: "6aff6eb9-0114-4c12-8bd0-8f01c2b42a55"
+Parent: "3ce9a090-fb9b-42be-b593-f39bfcb1de2b"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Themes/Hyland
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191029T141500Z
