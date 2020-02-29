@@ -94,7 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
-    <Content Include="App_Config\Include\Foundation\Foundation.Theming.Serialization.config" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\cd-hero.js" />
     <Content Include="scripts\custom.js" />

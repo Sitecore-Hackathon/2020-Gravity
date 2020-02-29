@@ -185,13 +185,9 @@
     <Compile Include="Services\ITrackerService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.SitecoreExtensions.PerformanceTweaks.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="App_Config\Include\Foundation\Foundation.SitecoreExtensions.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\Foundation\Foundation.SitecoreExtensions.Serialization.config" />
     <None Include="web.config" />
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <None Include="web.Debug.config">
