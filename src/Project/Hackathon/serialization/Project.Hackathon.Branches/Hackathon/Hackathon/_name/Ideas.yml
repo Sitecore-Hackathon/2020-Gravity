@@ -1,7 +1,7 @@
 ﻿---
-ID: "5f69a4c8-e5d4-41b9-945d-b5760473dc45"
+ID: "4c4b7edb-a9d8-46eb-a662-8195f281c674"
 Parent: "12036347-abe1-4381-92e1-033532b4e234"
-Template: "b922e875-0904-4571-8e6c-10ca8fb95f62"
+Template: "1724566f-d2b9-4253-97c9-41d3a1cf3224"
 Path: /sitecore/templates/Branches/Project/Hackathon/Hackathon/$name/Ideas
 DB: master
 Languages:
@@ -11,7 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T123313Z
-    - ID: "79feb57c-a53a-45a6-bffa-b8bab0cfa8d1"
-      Hint: Name
-      Value: Idea Item
+      Value: 20200229T183108Z
