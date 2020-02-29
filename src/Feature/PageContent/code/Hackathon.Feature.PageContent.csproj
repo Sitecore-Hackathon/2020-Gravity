@@ -6,16 +6,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D8EEFE1A-A950-4CFA-9E47-F408F9475379}</ProjectGuid>
+    <ProjectGuid>{9347353F-7DE1-4AE4-84C8-9D2E973F6BC4}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hackathon.Feature.Teasers</RootNamespace>
-    <AssemblyName>Hackathon.Feature.Teasers</AssemblyName>
+    <RootNamespace>Hackathon.Feature.PageContent</RootNamespace>
+    <AssemblyName>Hackathon.Feature.PageContent</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44323</IISExpressSSLPort>
+    <IISExpressSSLPort>44350</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -43,9 +43,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -55,24 +52,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -82,28 +61,44 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Sitecore.Kernel">
-      <Version>9.3.0</Version>
-    </PackageReference>
-    <PackageReference Include="Sitecore.Mvc">
-      <Version>9.3.0</Version>
-    </PackageReference>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\..\..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\..\..\..\..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\Teasers\Slider.cshtml" />
-    <Content Include="App_Config\Include\Feature\Hackathon.Feature.Teasers.Serialization.config" />
-    <None Include="Web.config" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\TeasersController.cs" />
-    <Compile Include="Models\ImageSlider.cs" />
-    <Compile Include="Models\ISliderItem.cs" />
-    <Compile Include="Models\VideoSlider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Views\PageContent\PageBody.cshtml" />
+    <Content Include="Views\PageContent\PageImage.cshtml" />
+    <Content Include="Views\PageContent\PageTitle.cshtml" />
+    <Content Include="App_Config\Include\Feature\Hackathon.Feature.PageContent.Serialization.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -112,14 +107,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Foundation\Dictionary\code\Sitecore.Foundation.Dictionary.csproj">
-      <Project>{0d6ba4d8-c469-4ae9-9ebb-93bdf7d7e78f}</Project>
-      <Name>Sitecore.Foundation.Dictionary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj">
-      <Project>{b535703f-8d07-4f23-a533-2974bb4cc7b1}</Project>
-      <Name>Sitecore.Foundation.SitecoreExtensions</Name>
-    </ProjectReference>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Kernel">
+      <Version>9.3.0</Version>
+    </PackageReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -134,9 +129,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58932</DevelopmentServerPort>
+          <DevelopmentServerPort>61909</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44323/</IISUrl>
+          <IISUrl>https://localhost:44350/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
