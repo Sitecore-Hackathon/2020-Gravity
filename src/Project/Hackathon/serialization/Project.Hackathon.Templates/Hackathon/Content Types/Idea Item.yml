@@ -1,0 +1,22 @@
+﻿---
+ID: "b922e875-0904-4571-8e6c-10ca8fb95f62"
+Parent: "55739bd6-09ea-44e1-9ded-17bbc088707e"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Hackathon/Content Types/Idea Item
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: business/32x32/thought.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{D0D502BB-A7B5-4983-A811-7BA4CB45678C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T122258Z
