@@ -1,0 +1,14 @@
+﻿---
+ID: "61ee950d-d91c-4970-82cf-32c466b01f71"
+Parent: "f1bb491c-40dd-4885-b7a0-dc170cb5feaa"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/Navigation/_NavigationCssClass
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20200229T141126:637185822862536425Z"

@@ -1,0 +1,23 @@
+﻿---
+ID: "407a1b57-07d8-4318-bdc9-9b6fff3e7b0f"
+Parent: "9860ad95-0de7-4f60-9cf6-409548bfd270"
+Template: "9860ad95-0de7-4f60-9cf6-409548bfd270"
+Path: /sitecore/templates/Project/Hackathon/Content Types/Social Link Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{13C7E724-6745-4154-B221-98DE8424AF6D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T144115Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
