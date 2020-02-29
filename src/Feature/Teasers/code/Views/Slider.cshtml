@@ -1,0 +1,70 @@
+﻿@using Hackathon.Feature.Teasers.Models;
+@using Sitecore.Foundation.Dictionary.Repositories;
+
+@model List<Hackathon.Feature.Teasers.Models.ISliderItem>
+
+@if (Model == null || Model.Count == 0)
+{
+    <p>@DictionaryPhraseRepository.Current.Get("", "The data source is empty or not set, please select a data source.")</p>
+}
+else
+{
+    <section id="home" class="no-padding">
+        <div id="main-slide" class="cd-hero">
+            <ul class="cd-hero-slider">
+                @foreach (var slide in Model)
+                {
+                    if (slide is ImageSlider)
+                    {
+                        <li class="move-left">
+                            <div class="overlay2">
+                                <img class="" src="images/slider/bg1.jpg" alt="slider">
+                            </div>
+                            <div class="cd-full-width">
+                                <h2>Need To Invent The Future!</h2>
+                                <h3>We Making Difference To Great Things Possible</h3>
+                                <a href="#0" class="btn btn-primary white cd-btn">Start Now</a>
+                                <a href="#0" class="btn btn-primary solid cd-btn">Learn More</a>
+                            </div> <!-- .cd-full-width -->
+                        </li>
+                    }
+                    else if (slide is VideoSlider)
+                    {
+                        <li class="cd-bg-video selected from-right">
+                            <div class="cd-full-width">
+                                <h2>WE ARE HERE TO MAKE IT HAPPEN</h2>
+                                <h3>We Making Difference To Great Things Possible</h3>
+
+                                <a href="#0" class="cd-btn btn btn-primary solid">Learn more</a>
+                            </div> <!-- .cd-full-width -->
+
+                            <div class="cd-bg-video-wrapper" data-video="videos/video">
+                                <!-- video element will be loaded using jQuery -->
+                                <video loop=""><source src="videos/video.mp4" type="video/mp4"><source src="videos/video.webm" type="video/webm"></video>
+                            </div> <!-- .cd-bg-video-wrapper -->
+                        </li>
+                    }
+                }
+            </ul>
+            <div class="cd-slider-nav">
+                <nav>
+                    <span class="cd-marker item-4"></span>
+                    <ul>
+                        @foreach (var slide in Model)
+                        {
+                            if (slide is ImageSlider)
+                            {
+
+                                <li class=""><a href="#0"><i class="fa fa-android"></i> Tech</a></li>
+                            }
+                            else if (slide is VideoSlider)
+                            {
+                                <li class="video selected"><a href="#0"><i class="fa fa-video-camera"></i> Video</a></li>
+                            }
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+}
