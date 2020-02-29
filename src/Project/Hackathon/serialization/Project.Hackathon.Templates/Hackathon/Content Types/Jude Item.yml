@@ -2,7 +2,7 @@
 ID: "0ecfea09-7ae1-4627-951d-9ca5f8237a01"
 Parent: "55739bd6-09ea-44e1-9ded-17bbc088707e"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Hackathon/Content Types/Judge Item
+Path: /sitecore/templates/Project/Hackathon/Content Types/Jude Item
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
