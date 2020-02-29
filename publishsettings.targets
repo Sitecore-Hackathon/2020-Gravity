@@ -1,5 +1,5 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <publishUrl>http://sc93.local.test</publishUrl>
+    <publishUrl>https://sc93.local.test</publishUrl>
   </PropertyGroup>
 </Project>
