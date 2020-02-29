@@ -1,0 +1,14 @@
+﻿---
+ID: "a5a7c6b2-5bd7-402d-a6cd-517871fa022c"
+Parent: "24d14c1a-7975-47f5-885d-13fca3930fa1"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Accounts/_AccountsSettings/Accounts
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T075409Z

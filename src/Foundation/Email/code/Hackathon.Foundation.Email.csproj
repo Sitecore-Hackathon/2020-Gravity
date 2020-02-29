@@ -211,7 +211,7 @@
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Hackathon.Foundation.Email.Serialization.config" />
+    <Content Include="App_Config\Include\Foundation\Hackathon.Foundation.Email.Serialization.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

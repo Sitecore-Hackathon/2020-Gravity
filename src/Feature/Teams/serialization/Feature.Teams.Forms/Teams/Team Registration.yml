@@ -1,0 +1,22 @@
+﻿---
+ID: "bc9785ef-68af-4cb9-9737-deadbe6da9df"
+Parent: "0f4672c5-4009-44a4-bb75-78f6682dbfd7"
+Template: "6abee1f2-4ab4-47f0-ad8b-bdb36f37f64c"
+Path: /sitecore/Forms/Feature/Teams/Team Registration
+DB: master
+SharedFields:
+- ID: "558f9307-ebaf-480d-88b5-dfe9e63a66de"
+  Hint: Is Template
+  Type: Checkbox
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T040130Z

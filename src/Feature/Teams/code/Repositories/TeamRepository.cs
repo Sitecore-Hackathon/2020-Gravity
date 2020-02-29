@@ -53,15 +53,6 @@ namespace Hackathon.Feature.Teams.Repositories
             }
         }
 
-        public void CreateTeamMemberSitecoreItem(TeamMember TeamMember)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CreateTeamSitecoreItem(ID TeamId, Team Team)
-        {
-            throw new NotImplementedException();
-        }
 
         public void SendTeamRegistrationLink(string email)
         {
