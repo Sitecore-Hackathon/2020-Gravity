@@ -1,0 +1,21 @@
+﻿---
+ID: "d39b6937-361e-4a16-a8d0-27a66c3ef327"
+Parent: "55e50708-0211-46c8-90b9-0d6a0ca47ed0"
+Template: "55e50708-0211-46c8-90b9-0d6a0ca47ed0"
+Path: /sitecore/templates/Feature/Judges/_Judge/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T122348Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "f6b51342-3c44-4072-9a69-e740048e6566"
+      Hint: Name
+      Value: $name
