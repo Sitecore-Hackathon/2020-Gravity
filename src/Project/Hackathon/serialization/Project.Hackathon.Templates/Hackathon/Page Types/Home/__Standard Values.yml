@@ -5,10 +5,6 @@ Template: "4888c3ea-1a48-448e-9bc2-dc7c45525897"
 Path: /sitecore/templates/Project/Hackathon/Page Types/Home/__Standard Values
 DB: master
 SharedFields:
-- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
-  Hint: __Masters
-  Type: TreelistEx
-  Value: "{BC2E09E8-E01E-4D95-8702-4BF39B1E134D}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -33,6 +29,12 @@ SharedFields:
           par=""
           ph="header-navigation"
           uid="{073787AF-7589-4843-A5CA-CADA48274357}" />
+        <r
+          ds="{CBD1EC22-5FFE-482E-A56D-1B1952712085}"
+          id="{9536F1E9-1152-4729-AF2D-E2F7C3EA900A}"
+          par=""
+          ph="page-content"
+          uid="{AE6E774A-0361-49D4-83D5-D5ACBD3C8096}" />
         <r
           id="{0A196FBA-3AFC-4BD8-B6E9-F71A62F10671}"
           ph="footer"

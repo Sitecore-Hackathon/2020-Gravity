@@ -9,7 +9,7 @@ namespace Hackathon.Foundation.Settings.Repository
 {
     public class SiteSettings
     {
-        private static Item localSettings
+        public static Item localSettings
         {
             get
             {

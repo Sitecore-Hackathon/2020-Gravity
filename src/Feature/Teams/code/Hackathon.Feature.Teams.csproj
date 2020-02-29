@@ -127,7 +127,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -149,6 +149,14 @@
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Sitecore.Foundation.DependencyInjection.csproj">
       <Project>{366148B7-2392-4F42-80D6-786B7A3682AE}</Project>
       <Name>Sitecore.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Email\code\Hackathon.Foundation.Email.csproj">
+      <Project>{de5d9ef9-a64a-4b70-8512-466869cda4d9}</Project>
+      <Name>Hackathon.Foundation.Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Settings\code\Hackathon.Foundation.Settings.csproj">
+      <Project>{594b178a-b8f5-4fdd-b982-ff795f9b6dcc}</Project>
+      <Name>Hackathon.Foundation.Settings</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
