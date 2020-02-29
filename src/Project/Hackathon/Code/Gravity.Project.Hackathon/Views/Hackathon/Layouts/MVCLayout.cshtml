@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Foundation.Assets
+@using Sitecore.Foundation.Assets.Models
+@using Sitecore.Foundation.Assets.Services
+
+@{
+    Layout = "Default.cshtml";
+}
+
+<div class="body-inner">
+    @Html.Sitecore().Placeholder("header")
+    @Html.Sitecore().Placeholder("page-content")
+    @Html.Sitecore().Placeholder("footer")
+    @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
+</div>

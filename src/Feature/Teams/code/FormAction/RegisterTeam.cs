@@ -16,13 +16,12 @@ namespace Hackathon.Feature.Teams.FormAction
 {
     public class RegisterTeam : SubmitActionBase<string>
     {
-        private ITeamRepository TeamRepository { get; }
+        private ITeamRepository TeamRepository { get; set; }
 
         //Initializes a new instance of the EmailMe class.
         //submitActionData => The submit action data
-        public RegisterTeam(ISubmitActionData submitActionData, ITeamRepository ITeamRepository) : base(submitActionData)
+        public RegisterTeam(ISubmitActionData submitActionData) : base(submitActionData)
         {
-            TeamRepository = ITeamRepository;
         }
 
 
@@ -34,6 +33,8 @@ namespace Hackathon.Feature.Teams.FormAction
         {
             try
             {
+                TeamRepository = new TeamRepository();
+
                 Team _team = new Team();
                 _team.TeamName = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Name"));
                 _team.EmailAddress = GetValue(formSubmitContext.Fields.FirstOrDefault(f => f.Name == "Team Email Address"));

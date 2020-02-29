@@ -4,6 +4,16 @@ Parent: "8c8ea546-4e79-4bce-b810-4b52a5b2f054"
 Template: "8c8ea546-4e79-4bce-b810-4b52a5b2f054"
 Path: /sitecore/templates/Project/Hackathon/Page Types/Generic Page/__Standard Values
 DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{EB3C41D1-DC06-4819-BDE0-F52A1C1652FC}" />
+    </r>
 Languages:
 - Language: en
   Versions:

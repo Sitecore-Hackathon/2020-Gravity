@@ -1,6 +1,13 @@
 ﻿@using Sitecore.Foundation.Assets
 @using Sitecore.Foundation.Assets.Models
 @using Sitecore.Foundation.Assets.Services
+@using Sitecore.Mvc
+@using Sitecore.ExperienceForms.Mvc.Html
+@using Sitecore.Mvc.Analytics.Extensions
+@{
+    Layout = null;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +17,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     @RenderAssetsService.Current.RenderScript(ScriptLocation.Head)
     @RenderAssetsService.Current.RenderStyles()
+    @Html.Sitecore().VisitorIdentification()
+    @Html.RenderFormStyles()
+    @Html.RenderFormScripts()
 </head>
 <body>
     <!-- Style switcher start -->
@@ -27,11 +37,6 @@
         <br /><br />
         <a class="btn btn-sm btn-primary close-styler pull-right">Close X</a>
     </div>
-    <div class="body-inner">
-        @Html.Sitecore().Placeholder("header")
-        @Html.Sitecore().Placeholder("page-content")
-        @Html.Sitecore().Placeholder("footer")
-        @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
-    </div>
+        @RenderBody()
 </body>
 </html>
