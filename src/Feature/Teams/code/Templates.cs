@@ -51,5 +51,11 @@ namespace Hackathon.Feature.Teams
                 public const string Country_FieldName = "Country";
             }
         }
+
+        public struct TeamsListing
+        {
+            public static readonly ID ID = new ID("{69210007-89F6-445C-8857-E573C6B5B035}");
+
+        }
     }
 }

@@ -7,7 +7,7 @@
 @if (Model.Judges != null && Model.Judges.Count > 0)
 {
     <!-- Judge start -->
-    <section id="Judge" class="Judge">
+    <section id="team" class="team">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 heading">
@@ -21,16 +21,16 @@
                 {
 
                     <div class="col-md-3 col-sm-6">
-                        <div class="Judge wow slideInLeft">
+                        <div class="team wow slideInLeft">
                             <div class="img-hexagon">
                                 @Html.Sitecore().Field(Templates.Judges.Fields.Picture, item)
                                 <span class="img-top"></span>
                                 <span class="img-bottom"></span>
                             </div>
-                            <div class="Judge-content">
+                            <div class="team-content">
                                 <h3>@Html.Sitecore().Field(Templates.Judges.Fields.Name, item)</h3>
 
-                                <div class="Judge-social">
+                                <div class="team-social">
 
                                     @Html.Sitecore().Field(Templates.Judges.Fields.TwitterAccount, item,
                                         new { text = "<i class='fa fa-twitter'></i>", @Class = "twt" }

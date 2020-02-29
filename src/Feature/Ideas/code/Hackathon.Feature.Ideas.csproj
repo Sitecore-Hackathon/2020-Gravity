@@ -87,7 +87,7 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Hackathon.Feature.Ideas.Serialization.config" />
     <Content Include="Views\Ideas\IdeasListing.cshtml" />
-    <Content Include="Views\Web.config" />
+    <None Include="Views\Web.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

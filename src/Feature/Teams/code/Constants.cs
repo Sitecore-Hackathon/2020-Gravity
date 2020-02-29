@@ -18,5 +18,10 @@ namespace Hackathon.Feature.Teams
         {
             public const string Master = "master";
         }
+
+        public struct DictionaryPaths
+        {
+            public const string Title = "Teams/Title";
+        }
     }
 }
