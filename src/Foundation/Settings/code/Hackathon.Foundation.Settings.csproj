@@ -72,7 +72,7 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Hackathon.Foundation.Settings.Serialization.config" />
+    <Content Include="App_Config\Include\Foundation\Hackathon.Foundation.Settings.Serialization.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
