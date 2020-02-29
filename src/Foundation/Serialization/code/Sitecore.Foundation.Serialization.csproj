@@ -134,7 +134,6 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Roles.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Users.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.IdentityServer.config" />
-    <Content Include="App_Config\Include\Hackathon.Dev.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
