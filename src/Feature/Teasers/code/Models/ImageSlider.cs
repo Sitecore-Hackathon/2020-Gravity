@@ -13,5 +13,6 @@ namespace Hackathon.Feature.Teasers.Models
         public string ImageAlt { get; set; }
         public string LinkUrl { get; set; }
         public string LinkTarget { get; set; }
+        public string LinkText { get; set; }
     }
 }

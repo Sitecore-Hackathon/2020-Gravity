@@ -10,6 +10,7 @@ using Sitecore.Foundation.SitecoreExtensions.Extensions;
 using Hackathon.Feature.Teasers.Models;
 using Sitecore.Data.Fields;
 using Sitecore.Resources.Media;
+using Sitecore.Data.Items;
 
 namespace Hackathon.Feature.Teasers.Controllers
 {
@@ -51,6 +52,7 @@ namespace Hackathon.Feature.Teasers.Controllers
                         {
                             _imageSlider.LinkUrl =_Link.GetFriendlyUrl();
                             _imageSlider.LinkTarget = _Link.Target;
+                            _imageSlider.LinkText = _Link.Text;
                         }
 
                         Items.Add(_imageSlider);
@@ -58,20 +60,24 @@ namespace Hackathon.Feature.Teasers.Controllers
                     else if (slide.IsDerived(Templates.VideoSlider.ID))
                     {
                         VideoSlider _videoSlider = new VideoSlider();
-                        _videoSlider.Title = slide.Fields[Templates.ImageSlider.Fields.Title].Value;
-                        _videoSlider.Description = slide.Fields[Templates.ImageSlider.Fields.Description].Value;
+                        _videoSlider.Title = slide.Fields[Templates.VideoSlider.Fields.Title].Value;
+                        _videoSlider.Description = slide.Fields[Templates.VideoSlider.Fields.Description].Value;
 
-                        LinkField _videoLink = (LinkField)slide.Fields[Templates.ImageSlider.Fields.Image];
+                        LinkField _videoLink = (LinkField)slide.Fields[Templates.VideoSlider.Fields.Video];
                         if (_videoLink != null)
                         {
-                            _videoSlider.LinkUrl = _videoLink.GetFriendlyUrl();
+                            MediaItem video = Sitecore.Context.Database.GetItem(_videoLink.TargetID);
+
+                            string src = Sitecore.Resources.Media.MediaManager.GetMediaUrl(video);
+                            _videoSlider.VideoUrl = src.Split('.')[0];
                         }
 
-                        LinkField _Link = (LinkField)slide.Fields[Templates.ImageSlider.Fields.Link];
+                        LinkField _Link = (LinkField)slide.Fields[Templates.VideoSlider.Fields.Link];
                         if (_Link != null)
                         {
                             _videoSlider.LinkUrl = _Link.GetFriendlyUrl();
                             _videoSlider.LinkTarget = _Link.Target;
+                            _videoSlider.LinkText = _Link.Text;
                         }
 
                         Items.Add(_videoSlider);

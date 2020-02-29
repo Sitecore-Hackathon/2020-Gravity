@@ -16,31 +16,34 @@ else
                 {
                     if (slide is ImageSlider)
                     {
-                        <li class="move-left">
+                        var _slide = slide as ImageSlider;
+
+                        <li class="selected">
                             <div class="overlay2">
-                                <img class="" src="images/slider/bg1.jpg" alt="slider">
+                                <img class="" src="@_slide.ImageUrl" alt="@_slide.ImageAlt">
                             </div>
                             <div class="cd-full-width">
-                                <h2>Need To Invent The Future!</h2>
-                                <h3>We Making Difference To Great Things Possible</h3>
-                                <a href="#0" class="btn btn-primary white cd-btn">Start Now</a>
-                                <a href="#0" class="btn btn-primary solid cd-btn">Learn More</a>
+                                <h2>@_slide.Title</h2>
+                                <h3>@_slide.Description</h3>
+                                <a href="@_slide.LinkUrl" target="@_slide.LinkTarget" class="btn btn-primary white cd-btn">@_slide.LinkText</a>
                             </div> <!-- .cd-full-width -->
                         </li>
                     }
                     else if (slide is VideoSlider)
                     {
-                        <li class="cd-bg-video selected from-right">
-                            <div class="cd-full-width">
-                                <h2>WE ARE HERE TO MAKE IT HAPPEN</h2>
-                                <h3>We Making Difference To Great Things Possible</h3>
+                        var _video = slide as VideoSlider;
 
-                                <a href="#0" class="cd-btn btn btn-primary solid">Learn more</a>
+                        <li class="cd-bg-video">
+                            <div class="cd-full-width">
+                                <h2>@_video.Title</h2>
+                                <h3>@_video.Description</h3>
+
+                                <a href="@_video.LinkUrl" target="@_video.LinkTarget" class="cd-btn btn btn-primary solid">@_video.LinkText</a>
                             </div> <!-- .cd-full-width -->
 
-                            <div class="cd-bg-video-wrapper" data-video="videos/video">
+                            <div class="cd-bg-video-wrapper" data-video="@_video.VideoUrl">
                                 <!-- video element will be loaded using jQuery -->
-                                <video loop=""><source src="videos/video.mp4" type="video/mp4"><source src="videos/video.webm" type="video/webm"></video>
+                                
                             </div> <!-- .cd-bg-video-wrapper -->
                         </li>
                     }
@@ -48,18 +51,18 @@ else
             </ul>
             <div class="cd-slider-nav">
                 <nav>
-                    <span class="cd-marker item-4"></span>
+                    <span class="cd-marker item-1"></span>
                     <ul>
                         @foreach (var slide in Model)
                         {
                             if (slide is ImageSlider)
                             {
 
-                                <li class=""><a href="#0"><i class="fa fa-android"></i> Tech</a></li>
+                                <li class="selected"><a href="#0"><i class="fa fa-android"></i> Tech</a></li>
                             }
                             else if (slide is VideoSlider)
                             {
-                                <li class="video selected"><a href="#0"><i class="fa fa-video-camera"></i> Video</a></li>
+                                <li class="video"><a href="#0"><i class="fa fa-video-camera"></i> Video</a></li>
                             }
                         }
                     </ul>
