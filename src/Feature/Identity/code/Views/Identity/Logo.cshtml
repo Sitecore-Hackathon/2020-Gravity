@@ -1,6 +1,7 @@
 ﻿@using Hackathon.Feature.Identity
 @using Hackathon.Feature.Identity.Repositories
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.Mvc
 @using Sitecore.Links
 @model Sitecore.Mvc.Presentation.RenderingModel
 
@@ -12,12 +13,12 @@
         return;
     }
     //TODO: Resolve context site from item (implement in Foundation.Multisite)
-    var homeUrl = Sitecore.Context.Site?.GetStartItem()?.Url() ?? "/";
-    var hasTagline = identity.FieldHasValue(Templates.Identity.Fields.LogoTagLine);
+    var homeUrl = string.IsNullOrWhiteSpace(Sitecore.Context.Site.GetStartItem().Url()) ? "/" : Sitecore.Context.Site.GetStartItem().Url();
+    var hasTagline = identity.FieldHasValue(Templates.Identity.Fields.Logo);
 }
 
 <div class="navbar-brand navbar-bg">
-    <a href="/">
+    <a href="@homeUrl">
         @Html.Sitecore().Field(Templates.Identity.Fields.Logo, identity, new { @class = "img-responsive" })
     </a>
 </div>
