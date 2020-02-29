@@ -1,0 +1,21 @@
+﻿---
+ID: "f57fa34f-a62c-4aed-b8b4-8e47c5f0ce86"
+Parent: "f179ffa1-046d-41dd-9821-0acbe2164937"
+Template: "f179ffa1-046d-41dd-9821-0acbe2164937"
+Path: /sitecore/templates/Project/Hackathon/Content Types/Video Slide/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T122314Z
+    - ID: "25c0232a-811b-4413-b0fe-6b14f37379d7"
+      Hint: Title
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

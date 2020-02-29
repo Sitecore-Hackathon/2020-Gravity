@@ -1,0 +1,21 @@
+﻿---
+ID: "a0ee8f88-8039-4227-b19b-f0af86952d4c"
+Parent: "a5e39561-bb95-4b0c-b9c1-534d225da5fe"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Teasers/_Video Slider Item/Slider Information/Video
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: General Link
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T102707Z

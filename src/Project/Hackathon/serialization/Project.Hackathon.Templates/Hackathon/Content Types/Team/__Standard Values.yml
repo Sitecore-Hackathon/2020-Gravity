@@ -1,0 +1,21 @@
+﻿---
+ID: "c2c452cb-0707-4cf6-9c13-6f3868b277bf"
+Parent: "da57975e-c7b1-4673-833c-0d49df3b414f"
+Template: "da57975e-c7b1-4673-833c-0d49df3b414f"
+Path: /sitecore/templates/Project/Hackathon/Content Types/Team/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "00fb8cd9-291d-4e59-ad4e-45eafca2f1ae"
+      Hint: Name
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T122657Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

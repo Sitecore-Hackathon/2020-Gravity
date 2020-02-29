@@ -1,0 +1,21 @@
+﻿---
+ID: "195f64d1-c13a-49dd-876b-5022fa049298"
+Parent: "d8fa0ab3-b723-4a29-bfdd-bcb8bf641bf5"
+Template: "d8fa0ab3-b723-4a29-bfdd-bcb8bf641bf5"
+Path: /sitecore/templates/Project/Hackathon/Content Types/Image Slide/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "145cd81c-5b2b-4390-82ab-40994afa5679"
+      Hint: Title
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T122302Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
