@@ -23,20 +23,20 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="team wow slideInLeft">
                             <div class="img-hexagon">
-                                @Html.Sitecore().Field(Templates.Judges.Fields.Picture, item)
+                                @Html.Sitecore().Field(Templates.Judges.Fields.Picture, item.item)
                                 <span class="img-top"></span>
                                 <span class="img-bottom"></span>
                             </div>
                             <div class="team-content">
-                                <h3>@Html.Sitecore().Field(Templates.Judges.Fields.Name, item)</h3>
+                                <h3>@Html.Sitecore().Field(Templates.Judges.Fields.Name, item.item)</h3>
 
                                 <div class="team-social">
 
-                                    @Html.Sitecore().Field(Templates.Judges.Fields.TwitterAccount, item,
+                                    @Html.Sitecore().Field(Templates.Judges.Fields.TwitterAccount_FieldName, item.item,
                                         new { text = "<i class='fa fa-twitter'></i>", @Class = "twt" }
                                         )
 
-                                    @Html.Sitecore().Field(Templates.Judges.Fields.LinkedInAccount, item,
+                                    @Html.Sitecore().Field(Templates.Judges.Fields.LinkedInAccount_FieldName, item.item,
                                     new { text = "<i class='fa fa-linkedin'></i>", @Class = "linkdin" }
                                     )
 

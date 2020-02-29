@@ -13,7 +13,7 @@ SharedFields:
   Value: IdeasListing
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Hackathon.Feature.Ideas.Controllers ,Hackathon.Feature.Ideas
+  Value: Hackathon.Feature.Ideas.Controllers.IdeasController,Hackathon.Feature.Ideas
 Languages:
 - Language: en
   Versions:
@@ -21,4 +21,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: "20200229T144031:637185840316490297Z"
+      Value: 20200229T144031Z

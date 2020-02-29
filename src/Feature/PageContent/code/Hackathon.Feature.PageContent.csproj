@@ -112,6 +112,15 @@
     <PackageReference Include="Sitecore.Kernel">
       <Version>9.3.0</Version>
     </PackageReference>
+    <PackageReference Include="Sitecore.Mvc">
+      <Version>9.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\SitecoreExtensions\code\Sitecore.Foundation.SitecoreExtensions.csproj">
+      <Project>{b535703f-8d07-4f23-a533-2974bb4cc7b1}</Project>
+      <Name>Sitecore.Foundation.SitecoreExtensions</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

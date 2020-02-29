@@ -20,8 +20,8 @@
                         <div class="image-block-content">
                             <span class="feature-icon pull-left"><i class="fa fa-diamond"></i></span>
                             <div class="feature-content">
-                                <h3> @Html.Sitecore().Field(Templates.Ideas.Fields.Name, item)</h3>
-                                <p>@Html.Sitecore().Field(Templates.Ideas.Fields.Description, item)</p>
+                                <h3> @Html.Sitecore().Field(Templates.Ideas.Fields.Name, item.item)</h3>
+                                <p>@Html.Sitecore().Field(Templates.Ideas.Fields.Description, item.item)</p>
                             </div>
                         </div>
                     }

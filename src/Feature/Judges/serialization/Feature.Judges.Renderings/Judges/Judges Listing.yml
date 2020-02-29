@@ -13,7 +13,7 @@ SharedFields:
   Value: JudgesListing
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Hackathon.Feature.Judges.Controllers.JudgesController ,Hackathon.Feature.Judges
+  Value: Hackathon.Feature.Judges.Controllers.JudgesController,Hackathon.Feature.Judges
 Languages:
 - Language: en
   Versions:

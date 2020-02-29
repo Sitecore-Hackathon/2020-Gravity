@@ -10,7 +10,7 @@ namespace Hackathon.Feature.Ideas
     {
         public struct Ideas
         {
-            public static readonly ID ID = new ID("{0462E357-4A58-4CDC-BBE5-1684BA0B00D6}");
+            public static readonly ID ID = new ID("{D0D502BB-A7B5-4983-A811-7BA4CB45678C}");
 
             public struct Fields
             {
