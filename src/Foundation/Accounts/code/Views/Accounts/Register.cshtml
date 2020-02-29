@@ -10,21 +10,10 @@
 {
     @Html.AddUniqueFormId()
     <div class="form-group @Html.ValidationErrorFor(x => x.Email, "has-error")">
-        @Html.LabelFor(x => x.Email, new
-                                     {
-                                       @class = "control-label"
-                                     })
+        @Html.LabelFor(x => x.Email, new    {  @class = "control-label"  })
 
-        @Html.TextBoxFor(x => x.Email, new
-                                       {
-                                         @class = "form-control",
-                                         id = "registerEmail",
-                                         @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Email Placeholder", "Please enter your e-mail address")
-                                       })
-        @Html.ValidationMessageFor(x => x.Email, "", new
-                                                     {
-                                                       @class = "help-block"
-                                                     }, "p")
+        @Html.TextBoxFor(x => x.Email, new {  @class = "form-control", id = "registerEmail",  @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Email Placeholder", "Please enter your e-mail address") })
+        @Html.ValidationMessageFor(x => x.Email, "", new {  @class = "help-block"  }, "p")
     </div>
 
     <div class="form-group @Html.ValidationErrorFor(x => x.Password, "has-error")">
@@ -65,4 +54,84 @@
     </div>
 
     <input type="submit" class="btn btn-primary btn-lg btn-block" value="@Html.Sitecore().Dictionary("/Accounts/Register/Register", "Register")" />
+
+
+
+    <section id="main-container">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-7">
+                    <form id="contact-form" action="contact-form.php" method="post" role="form">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    @Html.LabelFor(x => x.Email, new { @class = "control-label" })
+
+                                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control", id = "registerEmail", @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Email Placeholder", "Please enter your e-mail address") })
+                                    @Html.ValidationMessageFor(x => x.Email, "", new { @class = "help-block" }, "p")
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    @Html.LabelFor(x => x.Password, new
+                                                                           {
+                                                                             @class = "control-label"
+                                                                           })
+
+
+                                    @Html.PasswordFor(x => x.Password, new
+                                                                       {
+                                                                         @class = "form-control",
+                                                                         id = "registerPassword",
+                                                                         @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Password Placeholder", "Please enter your new password")
+                                                                       })
+                                    @Html.ValidationMessageFor(x => x.Password, "", new
+                                                                                    {
+                                                                                      @class = "help-block"
+                                                                                    }, "p")
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    @Html.LabelFor(x => x.ConfirmPassword, new
+                                                                                 {
+                                                                                   @class = "control-label"
+                                                                                 })
+
+                                    @Html.PasswordFor(x => x.ConfirmPassword, new
+                                                                              {
+                                                                                @class = "form-control",
+                                                                                id = "registerConfirmPassword",
+                                                                                @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Confirm Password Placeholder", "Please confirm you new password")
+                                                                              })
+                                    @Html.ValidationMessageFor(x => x.ConfirmPassword, "", new
+                                                                                           {
+                                                                                             @class = "help-block"
+                                                                                           }, "p")
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="text-right">
+                            <br>
+                            <button class="btn btn-primary solid blank" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+
+        </div><!--/ container end -->
+
+    </section><!--/ Main container end -->
 }
