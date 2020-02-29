@@ -9,9 +9,12 @@ SharedFields:
   Hint: Conditions
   Value: |
     {"fieldConditions":[]}
+- ID: "7abaa3f6-6ec0-4b65-a463-7919bfae55aa"
+  Hint: Css Class
+  Value: "form-control"
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: B39CFE413BEE4069AA30CAFB44687E6E
+  Value: C338951C5B654A2085199F6A1AA33B3F
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox

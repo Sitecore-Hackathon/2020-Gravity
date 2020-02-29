@@ -1,0 +1,14 @@
+﻿---
+ID: "c71317ec-6a59-4e23-951b-d504452a8593"
+Parent: "19b7dfca-231a-4424-8a18-7b1c3c682359"
+Template: "e73897ad-4646-4e24-ba73-89be422e75a5"
+Path: "/sitecore/templates/Branches/Project/Hackathon/Hackathon/$name/Teams/Team-Registration"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T212732Z
