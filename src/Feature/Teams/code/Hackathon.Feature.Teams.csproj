@@ -109,7 +109,7 @@
   <ItemGroup>
     <Compile Include="Constants.cs" />
     <Compile Include="Controllers\TeamsController.cs" />
-    <Compile Include="FormAction\RegisterForm.cs" />
+    <Compile Include="FormAction\RegisterTeam.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Models\TeamMember.cs" />
@@ -142,6 +142,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Accounts\code\Sitecore.Foundation.Accounts.csproj">
+      <Project>{3f61c57d-50d9-4194-8196-ef5f7aa4cce5}</Project>
+      <Name>Sitecore.Foundation.Accounts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\DependencyInjection\code\Sitecore.Foundation.DependencyInjection.csproj">
       <Project>{366148B7-2392-4F42-80D6-786B7A3682AE}</Project>
       <Name>Sitecore.Foundation.DependencyInjection</Name>

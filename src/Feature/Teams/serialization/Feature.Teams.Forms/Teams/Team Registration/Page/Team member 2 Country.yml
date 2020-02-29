@@ -1,8 +1,8 @@
 ﻿---
-ID: "ced29f22-8b74-4e8a-ad8e-90c7ee6d1cfe"
+ID: "c338951c-5b65-4a20-8519-9f6a1aa33b3f"
 Parent: "75cd9d97-4b3a-4c66-8545-3b74099f4854"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/Feature/Teams/Team Registration/Page/Team Member 1 Twitter Url
+Path: /sitecore/Forms/Feature/Teams/Team Registration/Page/Team member 2 Country
 DB: master
 SharedFields:
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
@@ -11,7 +11,7 @@ SharedFields:
     {"fieldConditions":[]}
 - ID: "84ece662-5034-40cb-9c60-744db64bb294"
   Hint: Field Key
-  Value: 18DC747887574C18BFDADE7C396ADCCB
+  Value: B39CFE413BEE4069AA30CAFB44687E6E
 - ID: "8a43af61-0812-4b37-a343-96cde3f12bb1"
   Hint: Required
   Type: Checkbox
@@ -21,7 +21,7 @@ SharedFields:
   Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 900
+  Value: 1600
 Languages:
 - Language: en
   Versions:
@@ -32,4 +32,4 @@ Languages:
       Value: 20200229T040132Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Team Member 1 Twitter Url
+      Value: Team member 2 Country

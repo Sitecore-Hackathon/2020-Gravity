@@ -1,8 +1,8 @@
 ﻿---
-ID: "ced29f22-8b74-4e8a-ad8e-90c7ee6d1cfe"
+ID: "98fe040d-677f-48bb-a22f-5d5a54910181"
 Parent: "75cd9d97-4b3a-4c66-8545-3b74099f4854"
 Template: "0908030b-4564-42ea-a6fa-c7a5a2d921a8"
-Path: /sitecore/Forms/Feature/Teams/Team Registration/Page/Team Member 1 Twitter Url
+Path: /sitecore/Forms/Feature/Teams/Team Registration/Page/Team Member 1 Country
 DB: master
 SharedFields:
 - ID: "71c6de8e-4718-4977-b83e-b49552ee14b0"
@@ -21,7 +21,7 @@ SharedFields:
   Value: 0
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 900
+  Value: 1000
 Languages:
 - Language: en
   Versions:
@@ -32,4 +32,4 @@ Languages:
       Value: 20200229T040132Z
     - ID: "71ffd7b2-8b09-4f7b-8a66-1e4cef653e8d"
       Hint: Title
-      Value: Team Member 1 Twitter Url
+      Value: Team Member 1 Country

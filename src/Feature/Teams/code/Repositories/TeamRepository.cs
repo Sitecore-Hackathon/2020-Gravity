@@ -9,6 +9,8 @@ using Hackathon.Feature.Teams.Models;
 using static Hackathon.Feature.Teams.Constants;
 using Sitecore.Data;
 using Sitecore.Foundation.DependencyInjection;
+using Sitecore.Foundation.Accounts;
+using Sitecore.Foundation.Accounts.Repositories;
 
 namespace Hackathon.Feature.Teams.Repositories
 {
@@ -38,6 +40,7 @@ namespace Hackathon.Feature.Teams.Repositories
                             newItem[Templates.TeamMember.Fields.EmailAddress] = TeamMember.EmailAddress;
                             newItem[Templates.TeamMember.Fields.LinkedInUrl] = TeamMember.LinkedInUrl;
                             newItem[Templates.TeamMember.Fields.TwitterUrl] = TeamMember.TwitterUrl;
+                            newItem[Templates.TeamMember.Fields.Country] = TeamMember.Country;
                             newItem.Editing.EndEdit();
                         }
                     }
@@ -51,12 +54,6 @@ namespace Hackathon.Feature.Teams.Repositories
             {
                 Sitecore.Diagnostics.Log.Error(ex.Message, ex, this);
             }
-        }
-
-
-        public void SendTeamRegistrationLink(string email)
-        {
-           
         }
 
         public bool ValidateTeam(Team Team)
@@ -108,6 +105,8 @@ namespace Hackathon.Feature.Teams.Repositories
                             newItem.Editing.BeginEdit();
                             newItem[Templates.Team.Fields.Name] = Team.TeamName;
                             newItem[Templates.Team.Fields.EmailAddress] = Team.EmailAddress;
+                            newItem[Templates.Team.Fields.LoginName] = Team.LoginName;
+                            newItem[Templates.Team.Fields.Password] = Team.Password;
                             newItem.Editing.EndEdit();
                         }
                     }
@@ -116,6 +115,7 @@ namespace Hackathon.Feature.Teams.Repositories
                         newItem.Editing.CancelEdit();
                     }
 
+                    RegisterTeam(Team.LoginName, Team.Password);
                     return newItem.ID;
                 }
             }
@@ -127,9 +127,10 @@ namespace Hackathon.Feature.Teams.Repositories
             return null;
         }
 
-        public void RegisterTeam(string Email, string Password, string ProfileId)
+        public void RegisterTeam(string Email, string Password)
         {
-            throw new NotImplementedException();
+            IAccountRepository _accountRepository = new AccountRepository();
+            _accountRepository.RegisterUser(Email, Password, Constants.Settings.TeamProfileId.ToString());
         }
     }
 }
