@@ -2,7 +2,7 @@
 ID: "0a61f5f0-9e85-4886-8a0d-7fcc1eaccbf7"
 Parent: "124aed8a-d1b7-488c-8950-1c19ab85428d"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Identity/_Identity/Identity
+Path: /sitecore/templates/Feature/Identity/_Identity/Identity Information
 DB: master
 Languages:
 - Language: en
