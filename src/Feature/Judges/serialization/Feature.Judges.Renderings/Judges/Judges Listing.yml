@@ -1,0 +1,24 @@
+﻿---
+ID: "abdce331-4575-4bae-b6be-a7dbcad64e6c"
+Parent: "05694826-a090-48e6-9a2d-3677e51d05ac"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Judges/Judges Listing
+DB: master
+SharedFields:
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Project/Hackathon/Page Types/Judges
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: JudgesListing
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Hackathon.Feature.Judges.Controllers.JudgesController ,Hackathon.Feature.Judges
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20200229T144031:637185840316490297Z"

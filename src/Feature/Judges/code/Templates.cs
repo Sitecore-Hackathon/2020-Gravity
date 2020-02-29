@@ -20,5 +20,12 @@ namespace Hackathon.Feature.Judges
                 public static readonly ID Picture = new ID("{25C67C1C-1CB8-4FF1-AF2B-D87FFF256CFE}");
             }
         }
+
+        public struct JudgesListing
+        {
+            public static readonly ID ID = new ID("{A070B30B-0C04-4C0E-932B-EDD0DB130CC4}");
+        }
+
+
     }
 }

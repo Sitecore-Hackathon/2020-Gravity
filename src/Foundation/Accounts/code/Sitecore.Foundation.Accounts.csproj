@@ -160,7 +160,7 @@
     </Content>
     <None Include="Properties\PublishProfiles\Standalone.pubxml" />
     <Content Include="Views\Accounts\Login.cshtml" />
-    <Content Include="Views\web.config" />
+    <None Include="Views\web.config" />
     <Content Include="Views\Accounts\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
