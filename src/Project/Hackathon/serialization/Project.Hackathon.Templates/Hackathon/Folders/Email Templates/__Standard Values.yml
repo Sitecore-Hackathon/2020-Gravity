@@ -1,0 +1,23 @@
+﻿---
+ID: "f2cf32d6-18dc-4d55-80f0-fb0e8f2c0548"
+Parent: "dce8a4d4-ddf0-4f39-82ed-0e9daedf48c2"
+Template: "dce8a4d4-ddf0-4f39-82ed-0e9daedf48c2"
+Path: /sitecore/templates/Project/Hackathon/Folders/Email Templates/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{4A2DC876-D4BA-4876-A1BE-F8AC35FC80D5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T123756Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

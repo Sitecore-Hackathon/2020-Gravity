@@ -1,22 +1,20 @@
 ﻿---
-ID: "fa70f0bf-03ca-4aeb-ae92-3ab5411bfa8d"
+ID: "dce8a4d4-ddf0-4f39-82ed-0e9daedf48c2"
 Parent: "a22da59a-38ee-4c2d-9e5b-47b85e7e327b"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Hackathon/Folders/Slider Folder
+Path: /sitecore/templates/Project/Hackathon/Folders/Email Templates
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: /~/icon/apps/32x32/Slideshow.png
+  Value: /~/icon/applicationsv2/32x32/folder3_mail.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: |
-    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
-    {B2CFC44B-65ED-4E37-9104-2CDE925D300C}
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{4B24275C-B55D-42CE-A04C-A069A0CF930B}"
+  Value: "{F2CF32D6-18DC-4D55-80F0-FB0E8F2C0548}"
 Languages:
 - Language: en
   Versions:
@@ -24,4 +22,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T122108Z
+      Value: 20200229T123621Z

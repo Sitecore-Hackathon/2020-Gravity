@@ -1,0 +1,25 @@
+﻿---
+ID: "4b24275c-b55d-42ce-a04c-a069a0cf930b"
+Parent: "fa70f0bf-03ca-4aeb-ae92-3ab5411bfa8d"
+Template: "fa70f0bf-03ca-4aeb-ae92-3ab5411bfa8d"
+Path: /sitecore/templates/Project/Hackathon/Folders/Slider Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {F179FFA1-046D-41DD-9821-0ACBE2164937}
+    {D8FA0AB3-B723-4A29-BFDD-BCB8BF641BF5}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T123821Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
