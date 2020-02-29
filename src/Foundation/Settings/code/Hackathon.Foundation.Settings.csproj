@@ -61,9 +61,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\PublishProfiles\Local.pubxml.user" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -73,7 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Feature\Hackathon.Foundation.Settings.Serialization.config" />
-    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
