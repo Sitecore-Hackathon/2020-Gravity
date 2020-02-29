@@ -1,0 +1,33 @@
+﻿@using Sitecore.Mvc
+@using Hackathon.Feature.Ideas
+@using Sitecore.Foundation.Dictionary.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Hackathon.Feature.Ideas.Models.IdeaViewModel
+
+@if (Model.Ideas != null && Model.Ideas.Count > 0)
+{
+    <section id="image-block" class="image-block no-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 ts-padding img-block-right">
+                    <div class="img-block-head text-center">
+                        <h3>@Html.Sitecore().DictionaryField(Constants.DictionaryPaths.Title)</h3>
+                    </div>
+                    <div class="gap-30"></div>
+
+                    @foreach (var item in Model.Ideas)
+                    {
+                        <div class="image-block-content">
+                            <span class="feature-icon pull-left"><i class="fa fa-diamond"></i></span>
+                            <div class="feature-content">
+                                <h3> @Html.Sitecore().Field(Templates.Ideas.Fields.Name, item)</h3>
+                                <p>@Html.Sitecore().Field(Templates.Ideas.Fields.Description, item)</p>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </section>
+}

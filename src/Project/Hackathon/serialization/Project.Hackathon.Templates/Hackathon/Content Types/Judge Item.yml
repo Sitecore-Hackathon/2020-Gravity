@@ -1,0 +1,22 @@
+﻿---
+ID: "0ecfea09-7ae1-4627-951d-9ca5f8237a01"
+Parent: "55739bd6-09ea-44e1-9ded-17bbc088707e"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Hackathon/Content Types/Judge Item
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: businessv2/32x32/businessman.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{55E50708-0211-46C8-90B9-0D6A0CA47ED0}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T122038Z

@@ -91,7 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Slider.cshtml" />
+    <Content Include="Views\Teasers\Slider.cshtml" />
     <Content Include="App_Config\Include\Feature\Hackathon.Feature.Teasers.Serialization.config" />
     <None Include="Web.config" />
   </ItemGroup>

@@ -1,0 +1,14 @@
+﻿---
+ID: "21c9ef16-16a7-4ec2-9719-148421e8c167"
+Parent: "a4dce006-b039-4709-a2ea-c258f05fa920"
+Template: "9a8aab6c-4172-42f1-a590-12ccc8d02432"
+Path: /sitecore/templates/Branches/Project/Hackathon/Hackathon/$name/Judges
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T140624Z

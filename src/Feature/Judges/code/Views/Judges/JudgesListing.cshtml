@@ -1,0 +1,54 @@
+﻿@using Sitecore.Mvc
+@using Hackathon.Feature.Judges
+@using Sitecore.Foundation.Dictionary.Extensions
+@using Sitecore.Foundation.SitecoreExtensions.Extensions
+@model Hackathon.Feature.Judges.Models.JudgeViewModel
+
+@if (Model.Judges != null && Model.Judges.Count > 0)
+{
+    <!-- Judge start -->
+    <section id="Judge" class="Judge">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 heading">
+                    <span class="title-icon pull-left"><i class="fa fa-weixin"></i></span>
+                    <h2 class="title">@Html.Sitecore().DictionaryField(Constants.DictionaryPaths.Title) </h2>
+                </div>
+            </div><!-- Title row end -->
+
+            <div class="row text-center">
+                @foreach (var item in Model.Judges)
+                {
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="Judge wow slideInLeft">
+                            <div class="img-hexagon">
+                                @Html.Sitecore().Field(Templates.Judges.Fields.Picture, item)
+                                <span class="img-top"></span>
+                                <span class="img-bottom"></span>
+                            </div>
+                            <div class="Judge-content">
+                                <h3>@Html.Sitecore().Field(Templates.Judges.Fields.Name, item)</h3>
+
+                                <div class="Judge-social">
+
+                                    @Html.Sitecore().Field(Templates.Judges.Fields.TwitterAccount, item,
+                                        new { text = "<i class='fa fa-twitter'></i>", @Class = "twt" }
+                                        )
+
+                                    @Html.Sitecore().Field(Templates.Judges.Fields.LinkedInAccount, item,
+                                    new { text = "<i class='fa fa-linkedin'></i>", @Class = "linkdin" }
+                                    )
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+            </div><!--/ Content row end -->
+        </div><!--/ Container end -->
+    </section><!--/ Judge end -->
+
+}

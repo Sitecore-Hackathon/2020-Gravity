@@ -11,5 +11,6 @@ namespace Hackathon.Feature.Teams.Models
         public string EmailAddress { get; set; }
         public string LinkedInUrl { get; set; }
         public string TwitterUrl { get; set; }
+        public string Country { get; set; }
     }
 }

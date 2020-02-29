@@ -1,0 +1,19 @@
+﻿---
+ID: "a070b30b-0c04-4c0e-932b-edd0db130cc4"
+Parent: "ff6a3a02-039e-4ee5-97e9-a79ffcdf2793"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/Judges/_JudgesListing
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T150340Z

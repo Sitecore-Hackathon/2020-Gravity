@@ -1,0 +1,35 @@
+﻿---
+ID: "4cc15345-0e80-4e01-9b2d-f4026c4f0ef3"
+Parent: "e73897ad-4646-4e24-ba73-89be422e75a5"
+Template: "e73897ad-4646-4e24-ba73-89be422e75a5"
+Path: /sitecore/templates/Project/Hackathon/Page Types/Team Registration/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{EB3C41D1-DC06-4819-BDE0-F52A1C1652FC}">
+        <r
+          ds="{BC9785EF-68AF-4CB9-9737-DEADBE6DA9DF}"
+          id="{6B5B0FE6-5C85-4487-BA7E-F8C2ECC186A8}"
+          par=""
+          ph="page-content"
+          uid="{B0C736F8-BDA5-4360-BAF0-7F6217B1B852}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T165603Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
