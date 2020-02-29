@@ -4,6 +4,11 @@ Parent: "da57975e-c7b1-4673-833c-0d49df3b414f"
 Template: "da57975e-c7b1-4673-833c-0d49df3b414f"
 Path: /sitecore/templates/Project/Hackathon/Content Types/Team/__Standard Values
 DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{7F58345E-7D2A-44C1-94BA-53BBE6D8FDA4}"
 Languages:
 - Language: en
   Versions:

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Sitecore.Data.Items;
 
 namespace Hackathon.Feature.Teams.Models
 {
@@ -12,5 +13,6 @@ namespace Hackathon.Feature.Teams.Models
         public string LinkedInUrl { get; set; }
         public string TwitterUrl { get; set; }
         public string Country { get; set; }
+        public Item item { get; set; }
     }
 }

@@ -91,7 +91,7 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <None Include="Views\web.config" />
     <Content Include="Views\PageContent\PageBody.cshtml" />
     <Content Include="Views\PageContent\PageImage.cshtml" />
     <Content Include="Views\PageContent\PageTitle.cshtml" />
