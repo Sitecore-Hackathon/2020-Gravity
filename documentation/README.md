@@ -60,5 +60,5 @@ Solution Code
 ## Video:
 
 
+(https://www.youtube.com/watch?v=KTR_NX2Qj6A)
 
-[![Watch our video on Youtube]()]()
