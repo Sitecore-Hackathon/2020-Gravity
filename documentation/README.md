@@ -20,11 +20,29 @@ Does your module rely on other Sitecore modules or frameworks?
 
 ## Installation:
 
+- Install **Sitecore 9.3 initial release (XP0 Single)**, Select **$Prefix = "sc93"** (domain to be **http://sc93/**)
+
+- Install website base package from Sc.Package folder [Gravity-Hackathon-Base-1.0.zip](https://github.com/Sitecore-Hackathon/2020-Gravity/blob/master/sc.package/Gravity-Hackathon-Base-1.0.zip "Gravity-Hackathon-Base-1.0.zip")  and then Select **Overwrite all**
+- Then, Install website base package from Sc.Package folder [Gravity-Hackathon-Content-1.0.zip](https://github.com/Sitecore-Hackathon/2020-Gravity/blob/master/sc.package/Gravity-Hackathon-Content-1.0.zip "Gravity-Hackathon-Content-1.0.zip")  and then Select **Overwrite all**
+- Publish Site
+- Rebuild Index (need master and core indexed for module to fully work)
+
 ## Configuration:
 
 Everything should be included in the provided package and steps above
 
 ## Usage:
+
+The provided package will include website templates, renderings, layouts and content.The provided website contains the following features:
+- Teams Feature: Allowing teams to register with three members limitation, entering a team name, email address in addition to a login creds (username and password) in order to be able to submit their module in future.
+
+- Judges Feature: we created a Judges feature to allow keeping a history with the indivuidules who help every year, we list them in the year hackathon page.
+
+- Ideas Feature: we also created a feature to log ideas on the Hackathon year level.
+
+- Content components as sliders, page content, navigation and login also has been founded for future development.
+
+
 
 ## Video:
 
