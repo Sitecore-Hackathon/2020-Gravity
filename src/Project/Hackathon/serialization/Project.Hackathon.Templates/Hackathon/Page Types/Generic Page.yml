@@ -14,6 +14,10 @@ SharedFields:
   Value: |
     {1930BBEB-7805-471A-A3BE-4858AC7CF696}
     {AF74A00B-8CA7-4C9A-A5C1-156A68590EE2}
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: 
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
   Value: "{F61B8529-BE00-452A-A629-27B4466EE5DC}"
