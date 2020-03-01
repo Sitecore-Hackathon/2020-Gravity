@@ -35,7 +35,6 @@ gulp.task("default",
             "Publish-All-Projects",
             "Apply-Xml-Transform",
             "Publish-Transforms",
-            "Sync-Unicorn",
             callback);
     });
 
