@@ -42,7 +42,20 @@ The provided package will include website templates, renderings, layouts and con
 
 - Content components as sliders, page content, navigation and login also has been founded for future development.
 
+## Screenshots:
 
+Sitecore Content Tree
+
+
+
+![Content Tree](https://github.com/Sitecore-Hackathon/2020-Gravity/blob/master/documentation/images/ContentTree.png "Content Tree")
+
+
+Solution Code
+
+
+
+![Solution Code](https://github.com/Sitecore-Hackathon/2020-Gravity/blob/master/documentation/images/Solution%20Code.png "Solution Code")
 
 ## Video:
 
